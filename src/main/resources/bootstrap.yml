@@ -1,0 +1,14 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: demo-config-server
+  cloud:
+    config:
+      server:
+        git:
+          # uri: file:///C:/Users/david.gallego/Desktop/config-server-local
+          uri: https://github.com/dgallego58/demo-remote-server-properties.git
+          username: dgallego58
+          password: ${gitpassword}
+          default-label: main #rama
